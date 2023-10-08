@@ -1,0 +1,22 @@
+;>
+
+# Desk for %hw6
+
+- Author: ~dozreg-toplud
+- contains:
+  - %delta app from previous lessons;
+  - unit tests;
+  - this file.
+
+Poke examples:
+To add a value to the state:
+```
+:delta &delta-action [%push ~zod 5]
+```
+
+To delete the latest added value:
+```
+:delta &delta-action [%pop ~zod]
+```
+
+Poke the app with `+dbug` to inspect its state. Test the app with `-test /=delta=/tests ~`
